@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F655CD821EDE047400A6F673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655CD811EDE047400A6F673 /* AppDelegate.swift */; };
-		F655CD841EDE047400A6F673 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655CD831EDE047400A6F673 /* ViewController.swift */; };
+		F655CD841EDE047400A6F673 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F655CD831EDE047400A6F673 /* LoginVC.swift */; };
 		F655CD871EDE047400A6F673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F655CD851EDE047400A6F673 /* Main.storyboard */; };
 		F655CD8A1EDE047400A6F673 /* Capstone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F655CD881EDE047400A6F673 /* Capstone.xcdatamodeld */; };
 		F655CD8C1EDE047400A6F673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F655CD8B1EDE047400A6F673 /* Assets.xcassets */; };
 		F655CD8F1EDE047400A6F673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F655CD8D1EDE047400A6F673 /* LaunchScreen.storyboard */; };
+		F655CD981EDE0DD100A6F673 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F655CD971EDE0DD100A6F673 /* FBSDKLoginKit.framework */; };
+		F68420A21EDE14F0000A6CEC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68420A11EDE14F0000A6CEC /* FBSDKCoreKit.framework */; };
+		F68420A41EDE1500000A6CEC /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68420A31EDE1500000A6CEC /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F655CD7E1EDE047400A6F673 /* Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F655CD811EDE047400A6F673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F655CD831EDE047400A6F673 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F655CD831EDE047400A6F673 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F655CD861EDE047400A6F673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F655CD891EDE047400A6F673 /* Capstone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Capstone.xcdatamodel; sourceTree = "<group>"; };
 		F655CD8B1EDE047400A6F673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F655CD8E1EDE047400A6F673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F655CD901EDE047400A6F673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F655CD971EDE0DD100A6F673 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		F68420A11EDE14F0000A6CEC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		F68420A31EDE1500000A6CEC /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F655CD981EDE0DD100A6F673 /* FBSDKLoginKit.framework in Frameworks */,
+				F68420A21EDE14F0000A6CEC /* FBSDKCoreKit.framework in Frameworks */,
+				F68420A41EDE1500000A6CEC /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +65,11 @@
 		F655CD801EDE047400A6F673 /* Capstone */ = {
 			isa = PBXGroup;
 			children = (
+				F655CD961EDE0D6300A6F673 /* Frameworks */,
+				F68420A71EDE1C2E000A6CEC /* Models */,
+				F68420A61EDE1C27000A6CEC /* Controllers */,
+				F68420A51EDE1C21000A6CEC /* Views */,
 				F655CD811EDE047400A6F673 /* AppDelegate.swift */,
-				F655CD831EDE047400A6F673 /* ViewController.swift */,
 				F655CD851EDE047400A6F673 /* Main.storyboard */,
 				F655CD8B1EDE047400A6F673 /* Assets.xcassets */,
 				F655CD8D1EDE047400A6F673 /* LaunchScreen.storyboard */,
@@ -65,6 +77,38 @@
 				F655CD881EDE047400A6F673 /* Capstone.xcdatamodeld */,
 			);
 			path = Capstone;
+			sourceTree = "<group>";
+		};
+		F655CD961EDE0D6300A6F673 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F68420A31EDE1500000A6CEC /* FBSDKShareKit.framework */,
+				F68420A11EDE14F0000A6CEC /* FBSDKCoreKit.framework */,
+				F655CD971EDE0DD100A6F673 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F68420A51EDE1C21000A6CEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F68420A61EDE1C27000A6CEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F655CD831EDE047400A6F673 /* LoginVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F68420A71EDE1C2E000A6CEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F655CD841EDE047400A6F673 /* ViewController.swift in Sources */,
+				F655CD841EDE047400A6F673 /* LoginVC.swift in Sources */,
 				F655CD8A1EDE047400A6F673 /* Capstone.xcdatamodeld in Sources */,
 				F655CD821EDE047400A6F673 /* AppDelegate.swift in Sources */,
 			);
@@ -266,6 +310,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 34KC4VR7Y2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Documents/FacebookSDKs-iOS-4.23.0",
+					"$(PROJECT_DIR)/Capstone",
+				);
 				INFOPLIST_FILE = Capstone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanefaison.Capstone;
@@ -279,6 +327,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 34KC4VR7Y2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Documents/FacebookSDKs-iOS-4.23.0",
+					"$(PROJECT_DIR)/Capstone",
+				);
 				INFOPLIST_FILE = Capstone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lanefaison.Capstone;
@@ -306,6 +358,7 @@
 				F655CD951EDE047400A6F673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
